@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+		
+		<link rel = "stylesheet" type= "text/css" href = "mystylesheet.css"/>
+		<script>
+			var slideIndex = 0;
+				carousel();
+
+			function carousel() {
+  			var i;
+  			var x = document.getElementsByClassName("mySlides");
+  			for (i = 0; i < x.length; i++) {
+   				x[i].style.display = "none";
+  				}
+  			slideIndex++;
+  			if (slideIndex > x.length) {slideIndex = 1}
+  				x[slideIndex-1].style.display = "block";
+  			setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+		</script>
+		
+		
+    </head>
+    <body>
+		
+		<header>
+		<h1 class = "topic"> WELCOME</h1>
+		</header>
+		<div id = "sta"  >
+		
+			<ul>
+				<button class="but"> Home</button>
+				<a href="Who-We-Are.html"><button class="but" > Who We Are</button></a>
+				<a href="What-We-Do.html"><button class="but" >What We Do</button></a>
+				<a href="Success Stories.html"><button class="but" > Success Stories</button></a>
+				<a href="Picture-Gallery.html"><button class="but">Picture Gallery</button></a>
+				<a href="Buy-Now.html"><button class="but" >Online Shop</button></a>
+			</ul>
+		
+		</div >
+		
+		<div>	
+			<div id = "mypic">	
+					<img class = "mySlides" src= "Images\IMG_20170810_133133.jpg" width= "25%" >
+					<img class = "mySlides" src= "Images\dome.jpeg" width= "25%" >
+					<img class = "mySlides" src= "Images\IMG_20170810_135026.jpg" width= "25%" >
+					<img class = "mySlides" src= "Images\bullet.jpeg" width= "25%" >
+					<img class = "mySlides" src= "Images\IMG_20180206_145101.jpg" width= "25%" >
+					<img class = "mySlides" src= "Images\IP Ex ProofCamera.jpg" width= "25%" >
+					<img class = "mySlides" src= "Images\IMG_20190729_113929.jpg" width= "25%" >
+					<img class = "mySlides" src= "Images\IMG_20190728_194622.jpg" width= "25%" >
+					
+			</div>
+			
+		</div>
+		
+		<section id= "sec1">
+			<p> Ikechukwu Ginika is a renowned IT professional. For over 13 years, Ikechukwu has worked with several Information and Communication / 
+			Telecommunication giants. Today, he is a renowned Network professional. He is proficient with network design, intelligent network switching 
+			and routing, security and surveillance systems, systems integration and network management. He is also taking strides in Web design and development. 
+			He is passionate about machine learning, artificial intelligence and robotics. He has pioneered several projects in and around Nigeria. He is the founder and 
+			CEO of <a href= "www.i-superway.com">i-Superway Networks Limited</a>, co-founder of <a href= "marketlarge.com">Market Large International</a>, an international e-commerce giant, 
+			and the publisher of <a href="successandpeople.blogspot.com"> Success and People </a> </p>
+			
+			<p>Hi! Glad to have you visit my page. I'ld like to show you around a little bit. Just follow me</p>
+		</section>
+		<footer >
+			(c) Copyright 2020
+			
+		</footer>
+    </body>
+</html>
